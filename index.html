@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML5 Loader</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-2.1.1.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="header">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">HTML5 Drag & Drop</a>
+            </div>
+          </div><!-- /.container-fluid -->
+        </nav>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="drop-area" ondragover="doDragOver(event);" ondrop="doDrop(event);">
+                <p>Please Drop here!</p>
+            </div>
+            <div class="preview-area">
+                <h2>プレビュー</h2>
+                <img id="preview">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="creater">
+            <p>&copy; masarufuruya</p>
+        </div>
+    </div>
+    </body>
+</html>
